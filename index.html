@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ARDA GENÇ</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: #808080;
+        }
+
+       
+        .navbar {
+            padding: 10px 0;
+            color: white;
+        }
+
+        .background-navbar {
+            background-image: url('./görüntüler/siyah arka plan.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar ul {
+            list-style-type: none; 
+            padding: 0; 
+            display: flex; 
+            justify-content: center; 
+        }
+
+        .navbar ul li {
+            margin: 0 15px; 
+            transition: transform 0.3s ease; 
+        }
+
+        .navbar ul li:hover {
+            transform: scale(1.2); 
+        }
+
+        .navbar ul li a {
+            transition: color 0.3s ease; 
+            color: white;
+            text-decoration: none; 
+            font-size: 20px; 
+        }
+
+        .navbar ul li a:hover {
+            color: #f0f0f0; 
+        }
+
+        
+        .footer {
+            background-image: url('./görüntüler/siyah arka plan.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            opacity: 0.9;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer li {
+            margin: 5px 0;
+            font-size: 20px;
+            transition: transform 0.3s ease; 
+        }
+
+        .footer li:hover {
+            transform: scale(1.1); 
+        }
+
+        
+        .welcome-message {
+            text-align: center;
+            font-size: 48px;
+            color: black;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+            margin: 10px 0;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .logo {
+            flex-grow: 1;
+            width: 75%;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 100px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 90%;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        small {
+            opacity: 0.5;
+        }
+
+        video {
+            z-index: 0;
+        }
+
+        .paragraph {
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            font-size: 20px;
+            font-style: italic;
+            margin: 20px auto;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .paragraph:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div id="top"></div> 
+
+    <div class="navbar background-navbar">
+        <ul>
+            <li><a href="#top">ANASAYFA</a></li>
+            <li><a href="#personal-info">KİŞİSEL BİLGİLER</a></li>
+            <li><a href="#video">VİDEO</a></li>
+            <li><a href="https://muhendislik.sdu.edu.tr/bilmuh" target="_blank">OKUDUĞUM OKUL</a></li>
+            <li><a href="#contact">İLETİŞİM BİLGİLERİ</a></li>
+        </ul>
+    </div>
+
+    <div class="welcome-message">Hoşgeldiniz!</div>
+
+    <hr>
+
+    <div class="logo" id="home">
+        <img src="./görüntüler/arda resim.jpeg" width="350" alt="Görüntü yüklenemedi">
+        <h3>ARDA GENÇ</h3>
+        <small>BİLGİSAYAR MÜHENDİSLİĞİ ÖĞRENCİSİ</small>
+        <p class="paragraph" id="personal-info">28 Ekim 2003'te Hatay/İskenderun'da dünyaya geldim. İlkokul ve ortaokulu General Şükrü Kanadlı İlkokulu'nda, ardından liseyi İskenderun Demirçelik Anadolu Lisesi'nde okudum. Üniversiteye İnönü Üniversitesinde başladım, birinci yılın sonunda üniversite başarı puanım ile Süleyman Demirel Üniversitesine geçiş yaptım. Şu an 3. sınıf öğrencisiyim. Python ve C++ program dillerini biliyorum. 2024 yazında Yazıcı Demirçelik Tur. Tic. A.Ş.'de kısa dönem stajımı tamamladım. Şu anda kendimi Android Studio ve HTML/CSS üzerinde geliştirmeye çalışıyorum. Mezun olduğumda Android Studio tarafında uzmanlaşmayı planlıyorum.</p>
+        <hr>
+        <video src="./videolar/Beşiktaş - Liverpool ● Müthiş Taraftar ● Dale Cavese ● UEFA Şampiyonlar Ligi ● 2007_2008.mp4" controls width="1500" autoplay id="video"></video>
+        <hr>
+        <br>
+    </div>
+
+    <div class="footer" id="contact">
+        <ul>    
+            <li><i class="fa-solid fa-house"></i><a href="#top">ANASAYFA</a></li>
+            <li><i class="fa-solid fa-phone" style="color: #000000;"></i>  0534.......</li>
+            <li><i class="fa-brands fa-instagram" style="color: #000000;"></i>  ardagenc.</li>
+            <li><i class="fa-solid fa-location-dot" style="color: #00040a;"></i>  HATAY/İSKENDERUN</li>
+            <li><i class="fa-solid fa-at" style="color: #000000;"></i>  ardagenc2003@outlook.com</li>
+            <li><i class="fa-solid fa-copyright" style ="color:black "></i>CopyRight</li>
+        </ul>
+    </div>
+</body>
+</html>
